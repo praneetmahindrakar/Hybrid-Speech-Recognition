@@ -33,12 +33,12 @@ pip install SpeechRecognition
 pip install scikit-learn
 pip install textblob
 pip install nltk
-
+```
 Also, download the required NLTK dataset:
 import nltk
 nltk.download('punkt')
 
-##How It Works
+## How It Works
 Audio Recording
 
 Clicking the "Record" button triggers a 5-second microphone recording using the sounddevice library.
