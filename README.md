@@ -38,7 +38,7 @@ Also, download the required NLTK dataset:
 import nltk
 nltk.download('punkt')
 
-How It Works
+##How It Works
 Audio Recording
 
 Clicking the "Record" button triggers a 5-second microphone recording using the sounddevice library.
