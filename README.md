@@ -39,30 +39,21 @@ import nltk
 nltk.download('punkt')
 
 ## How It Works
-Audio Recording
-
+-Audio Recording 
 Clicking the "Record" button triggers a 5-second microphone recording using the sounddevice library.
-
 The recording is saved locally as output.wav.
 
-Speech Recognition
-
+-Speech Recognition
 When the "Recognize Speech" button is clicked, the recorded audio is processed using the Google Web Speech API via the speech_recognition library.
-
 The audio is converted to text and displayed.
 
-Text Classification
-
+-Text Classification
 A Naive Bayes classifier (trained on a small dataset of example phrases) is used to classify the recognized speech.
-
 Categories include command or question with associated polarity (e.g., command-positive, question-neutral).
 
-Sentiment Analysis
-
+-Sentiment Analysis
 The recognized text is passed to TextBlob for sentiment analysis.
-
 Polarity scores are calculated and categorized as Positive, Neutral, or Negative.
 
-Dynamic Output Display
-
+-Dynamic Output Display
 All messages and classifications are shown in real-time within the notebook using ipywidgets and IPython.display.
